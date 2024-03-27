@@ -16,6 +16,16 @@ export const config = {
       level: 80,
     },
     {
+      name: "Angular",
+      icon: "icons/angular.png",
+      level: 70,
+    },
+    {
+      name: "VueJs",
+      icon: "icons/vue.png",
+      level: 50,
+    },
+    {
       name: "Typescript",
       icon: "icons/typescript.png",
       level: 80,
@@ -35,11 +45,7 @@ export const config = {
       icon: "icons/firebase.png",
       level: 50,
     },
-    {
-      name: "Angular",
-      icon: "icons/angular.png",
-      level: 70,
-    },
+
     {
       name: "TailwindCss",
       icon: "icons/tailwind.png",
@@ -52,29 +58,29 @@ export const config = {
     },
   ],
   projects: [
-    {
-      name: "Dissolve tutorial",
-      description: "Create a dissolve effect with React Three Fiber",
-      image: "projects/project1.jpg",
-      link: "https://www.youtube.com/watch?v=ma9t7HAOZRg",
-    },
-    {
-      name: "Transition effect",
-      description: "Shader based transition effect",
-      image: "projects/project2.jpg",
-      link: "https://www.youtube.com/watch?v=SOF7GBmC6gE",
-    },
-    {
-      name: "Portals",
-      description: "Create portals with React Three Fiber",
-      image: "projects/project3.jpg",
-      link: "https://www.youtube.com/watch?v=2W_VR92Pqgs",
-    },
+    // {
+    //   name: "Dissolve tutorial",
+    //   description: "Create a dissolve effect with React Three Fiber",
+    //   image: "projects/project1.jpg",
+    //   link: "https://www.youtube.com/watch?v=ma9t7HAOZRg",
+    // },
+    // {
+    //   name: "Transition effect",
+    //   description: "Shader based transition effect",
+    //   image: "projects/project2.jpg",
+    //   link: "https://www.youtube.com/watch?v=SOF7GBmC6gE",
+    // },
+    // {
+    //   name: "Portals",
+    //   description: "Create portals with React Three Fiber",
+    //   image: "projects/project3.jpg",
+    //   link: "https://www.youtube.com/watch?v=2W_VR92Pqgs",
+    // },
     {
       name: "3D Portfolio",
-      description: "Learn how to build a 3D portfolio",
-      image: "projects/project4.jpg",
-      link: "https://www.youtube.com/watch?v=pGMKIyALcK0",
+      description: "Build 3D CV with some interactions",
+      image: "projects/3d-portfolio.png",
+      link: "https://github.com/mquangdev/3D-Portfolio",
     },
   ],
   contact: {

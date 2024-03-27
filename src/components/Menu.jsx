@@ -3,7 +3,7 @@ import React from "react";
 function Menu() {
   return (
     <div className="menu">
-      <img className="menu__logo" src="logo.png" alt="logo" />
+      <div></div>
       <div className="menu__buttons">
         <a className="menu__button" href="#home">
           Home

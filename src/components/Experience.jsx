@@ -8,7 +8,7 @@ import {
   useScroll,
 } from "@react-three/drei";
 import Avatar from "./Avatar";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import SectionTitle from "./SectionTitle";
 import { useFrame } from "@react-three/fiber";
 import { Star } from "./Star";
@@ -26,11 +26,33 @@ import * as THREE from "three";
 import { config } from "../config";
 import { motion } from "framer-motion-3d";
 import MonitorScreen from "./MonitorScreen";
+import { Larmbogini } from "./Larmbogini";
+import { useControls } from "leva";
 export const Experience = () => {
   const sceneContainer = useRef();
   const scrollData = useScroll();
   const SECTION_DISTANCE = 10;
   const [section, setSection] = useState(config.sections[0]);
+  // const options = useMemo(() => {
+  //   return {
+  //     x: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+  //     y: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+  //     z: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+  //     visible: true,
+  //     color: { value: "lime" },
+  //   };
+  // }, []);
+  // const options2 = useMemo(() => {
+  //   return {
+  //     x: { value: 0, max: Math.PI * 2, step: 0.01 },
+  //     y: { value: 0, max: Math.PI * 2, step: 0.01 },
+  //     z: { value: 0, max: Math.PI * 2, step: 0.01 },
+  //     visible: true,
+  //     color: { value: "lime" },
+  //   };
+  // }, []);
+  // const pA = useControls("Polyhedron A", options);
+  // const pB = useControls("Polyhedron B", options2);
   useFrame(() => {
     sceneContainer.current.position.z =
       -scrollData.offset * SECTION_DISTANCE * (scrollData.pages - 1);
@@ -47,7 +69,8 @@ export const Experience = () => {
         scrollData.el.scrollTo(
           0,
           (indexSelected / (config.sections.length - 1)) *
-            (scrollData.el.scrollHeight - scrollData.el.clientHeight)
+            (scrollData.el.scrollHeight - scrollData.el.clientHeight) +
+            20
         );
       }
     };
@@ -78,10 +101,18 @@ export const Experience = () => {
               rotation-y={Math.PI / 4}
             />
           </Float>
-          <PalmTree
+          {/* <PalmTree
             scale={0.018}
             rotation-y={THREE.MathUtils.degToRad(140)}
             position={[4, 0, -5]}
+          /> */}
+          <Larmbogini
+            // scale={1}
+            // rotation-z={Math.PI}
+            rotation={[0, 2.29, 0]}
+            position={[2.76, 0, -1.12]}
+            scale={0.3}
+            // position={[0, -1, 15]}
           />
           <Float floatIntensity={0.6}>
             <Center disableY disableZ>

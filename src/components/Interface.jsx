@@ -46,7 +46,7 @@ function Interface() {
         {/* SKILLS */}
         <section className="section section--right">
           <motion.div
-            className="skills"
+            className="skills grid grid-cols-2"
             whileInView={"visible"}
             initial={{
               opacity: 0,
