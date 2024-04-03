@@ -28,6 +28,8 @@ import { motion } from "framer-motion-3d";
 import MonitorScreen from "./MonitorScreen";
 import { Larmbogini } from "./Larmbogini";
 import { useControls } from "leva";
+import BlackPanther from "./BlackPanther";
+import Cat from "./Cat";
 export const Experience = () => {
   const sceneContainer = useRef();
   const scrollData = useScroll();
@@ -35,9 +37,9 @@ export const Experience = () => {
   const [section, setSection] = useState(config.sections[0]);
   // const options = useMemo(() => {
   //   return {
-  //     x: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
-  //     y: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
-  //     z: { value: 0, min: 0, max: Math.PI * 2, step: 0.01 },
+  //     x: { value: 0, max: Math.PI * 2, step: 0.01 },
+  //     y: { value: 0, max: Math.PI * 2, step: 0.01 },
+  //     z: { value: 0, max: Math.PI * 2, step: 0.01 },
   //     visible: true,
   //     color: { value: "lime" },
   //   };
@@ -113,6 +115,11 @@ export const Experience = () => {
             position={[2.76, 0, -1.12]}
             scale={0.3}
             // position={[0, -1, 15]}
+          />
+          <Cat
+            rotation={[0, -0.46, 0]}
+            position={[-0.55, 0, 0.9]}
+            scale={0.03}
           />
           <Float floatIntensity={0.6}>
             <Center disableY disableZ>
