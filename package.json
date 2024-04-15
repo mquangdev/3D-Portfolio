@@ -1,4 +1,7 @@
 {
+  "homepage": "http://mquangdev.github.io/3D-Portfolio",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist",
   "name": "react-three-fiber-starter",
   "private": true,
   "version": "0.0.0",
