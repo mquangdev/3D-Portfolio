@@ -1,14 +1,14 @@
 # Getting Started
 
 First, run the development server:
-
-<code>
-       npm install 
-       #or
-       yarn
-</code>
+<pre>
+       <code>
+              npm install 
+              #or
+              yarn
+       </code>
+</pre>
 then
-
 <pre>
     <code>
        npm run dev
