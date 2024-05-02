@@ -2,11 +2,11 @@
 
 First, run the development server:
 <pre>
-       <code>
-              npm install 
-              #or
-              yarn
-       </code>
+    <code>
+       npm install 
+       #or
+       yarn
+    </code>
 </pre>
 then
 <pre>
