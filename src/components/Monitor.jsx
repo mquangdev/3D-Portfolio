@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import React from "react";
 
 export function Monitor(props) {
-  const { nodes, materials } = useGLTF("/models/Monitor.glb");
+  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Monitor.glb");
 
   return (
     <group {...props} dispose={null}>
@@ -17,4 +17,4 @@ export function Monitor(props) {
   );
 }
 
-useGLTF.preload("/models/Monitor.glb");
+useGLTF.preload("/3D-Portfolio/models/Monitor.glb");

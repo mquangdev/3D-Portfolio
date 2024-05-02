@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import React from "react";
 
 export function BookCase(props) {
-  const { nodes, materials } = useGLTF("/models/BookCaseWide.glb");
+  const { nodes, materials } = useGLTF("/3D-Portfolio/models/BookCaseWide.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]}>
@@ -53,4 +53,4 @@ export function BookCase(props) {
   );
 }
 
-useGLTF.preload("/models/BookCaseWide.glb");
+useGLTF.preload("/3D-Portfolio/models/BookCaseWide.glb");

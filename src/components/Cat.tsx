@@ -13,9 +13,11 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import * as THREE from "three";
 export default function Cat(props) {
   const group = useRef();
-  const { animations } = useGLTF("/models/Cat.glb");
-  const nodes = useLoader(GLTFLoader, "/models/Cat.glb")["nodes"];
-  const materials = useLoader(GLTFLoader, "/models/Cat.glb")["materials"];
+  const { animations } = useGLTF("/3D-Portfolio/models/Cat.glb");
+  const nodes = useLoader(GLTFLoader, "/3D-Portfolio/models/Cat.glb")["nodes"];
+  const materials = useLoader(GLTFLoader, "/3D-Portfolio/models/Cat.glb")[
+    "materials"
+  ];
   const { actions } = useAnimations(animations, group);
   console.log(actions);
   useEffect(() => {
@@ -89,4 +91,4 @@ export default function Cat(props) {
   );
 }
 
-useGLTF.preload("/models/Cat.glb");
+useGLTF.preload("/3D-Portfolio/models/Cat.glb");

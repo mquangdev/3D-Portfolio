@@ -9,7 +9,7 @@ import { useFrame } from "@react-three/fiber";
 import React, { useRef } from "react";
 
 export function Star(props) {
-  const { nodes, materials } = useGLTF("/models/Star.gltf");
+  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Star.gltf");
   const ref = useRef();
   useFrame(() => {
     ref.current.rotation.y += 0.06;
@@ -25,4 +25,4 @@ export function Star(props) {
   );
 }
 
-useGLTF.preload("/models/Star.gltf");
+useGLTF.preload("/3D-Portfolio/models/Star.gltf");

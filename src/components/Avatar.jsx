@@ -7,7 +7,7 @@ import { useAnimations, useFBX, useGLTF, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 export default function Avatar(props) {
-  const { nodes, materials } = useGLTF("/models/Me.glb");
+  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Me.glb");
   const { animations: idleAnimation } = useFBX(
     "/animations/Breathing_Idle.fbx"
   );
@@ -115,6 +115,6 @@ export default function Avatar(props) {
   );
 }
 
-useGLTF.preload("/models/Me.glb");
+useGLTF.preload("/3D-Portfolio/models/Me.glb");
 useFBX.preload("/animations/Breathing_Idle.fbx");
 useFBX.preload("/animations/Walking.fbx");

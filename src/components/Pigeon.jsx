@@ -9,7 +9,9 @@ import React, { useEffect, useRef, useState } from "react";
 
 export function Pigeon(props) {
   const group = useRef();
-  const { nodes, materials, animations } = useGLTF("/models/Pigeon.gltf");
+  const { nodes, materials, animations } = useGLTF(
+    "/3D-Portfolio/models/Pigeon.gltf"
+  );
   const { actions } = useAnimations(animations, group);
   const [animation, setAnimation] = useState("Flying_Idle");
   useEffect(() => {
@@ -63,4 +65,4 @@ export function Pigeon(props) {
   );
 }
 
-useGLTF.preload("/models/Pigeon.gltf");
+useGLTF.preload("/3D-Portfolio/models/Pigeon.gltf");

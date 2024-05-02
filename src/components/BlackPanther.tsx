@@ -13,11 +13,14 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import * as THREE from "three";
 export default function BlackPanther(props) {
   const group = useRef();
-  const { animations } = useGLTF("/models/black_panther.glb");
-  const nodes = useLoader(GLTFLoader, "/models/black_panther.glb")["nodes"];
-  const materials = useLoader(GLTFLoader, "/models/black_panther.glb")[
-    "materials"
+  const { animations } = useGLTF("/3D-Portfolio/models/black_panther.glb");
+  const nodes = useLoader(GLTFLoader, "/3D-Portfolio/models/black_panther.glb")[
+    "nodes"
   ];
+  const materials = useLoader(
+    GLTFLoader,
+    "/3D-Portfolio/models/black_panther.glb"
+  )["materials"];
   const { actions } = useAnimations(animations, group);
   return (
     <group ref={group} {...props} dispose={null}>
@@ -127,4 +130,4 @@ export default function BlackPanther(props) {
   );
 }
 
-useGLTF.preload("/models/black_panther.glb");
+useGLTF.preload("/3D-Portfolio/models/black_panther.glb");

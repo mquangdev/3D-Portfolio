@@ -8,7 +8,7 @@ import { useGLTF, useTexture } from "@react-three/drei";
 import React from "react";
 
 export function MacBookPro(props) {
-  const { nodes, materials } = useGLTF("/models/MacBook Pro.glb");
+  const { nodes, materials } = useGLTF("/3D-Portfolio/models/MacBook Pro.glb");
   const screenTexture = useTexture("textures/screen.jpg");
   return (
     <group {...props} dispose={null}>
@@ -51,4 +51,4 @@ export function MacBookPro(props) {
     </group>
   );
 }
-useGLTF.preload("/models/MacBook Pro.glb");
+useGLTF.preload("/3D-Portfolio/models/MacBook Pro.glb");
