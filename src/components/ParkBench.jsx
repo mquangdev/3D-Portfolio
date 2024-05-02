@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import React from "react";
 
 export function ParkBench(props) {
-  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Park Bench.glb");
+  const { nodes, materials } = useGLTF("./models/Park Bench.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -23,4 +23,4 @@ export function ParkBench(props) {
   );
 }
 
-useGLTF.preload("/3D-Portfolio/models/Park Bench.glb");
+useGLTF.preload("./models/Park Bench.glb");

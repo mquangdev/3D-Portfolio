@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import React from "react";
 
 export function Laptop(props) {
-  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Laptop.glb");
+  const { nodes, materials } = useGLTF("./models/Laptop.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -31,4 +31,4 @@ export function Laptop(props) {
   );
 }
 
-useGLTF.preload("/3D-Portfolio/models/Laptop.glb");
+useGLTF.preload("./models/Laptop.glb");

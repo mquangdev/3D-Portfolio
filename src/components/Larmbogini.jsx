@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
 
 export function Larmbogini(props) {
-  const { nodes, materials } = useGLTF("/3D-Portfolio/models/larmbogini.glb");
+  const { nodes, materials } = useGLTF("./models/larmbogini.glb");
   return (
     <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
@@ -59,4 +59,4 @@ export function Larmbogini(props) {
   );
 }
 
-useGLTF.preload("/3D-Portfolio/models/larmbogini.glb");
+useGLTF.preload("./models/larmbogini.glb");

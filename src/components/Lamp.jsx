@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import React from "react";
 
 export function Lamp(props) {
-  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Lamp.glb");
+  const { nodes, materials } = useGLTF("./models/Lamp.glb");
   return (
     <group {...props} dispose={null}>
       <group position={[0.326, 0.78, -0.505]} rotation={[-1.419, 0.087, 2.088]}>
@@ -39,4 +39,4 @@ export function Lamp(props) {
   );
 }
 
-useGLTF.preload("/3D-Portfolio/models/Lamp.glb");
+useGLTF.preload("./models/Lamp.glb");

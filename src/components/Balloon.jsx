@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import React from "react";
 
 export function Balloon(props) {
-  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Balloon.glb");
+  const { nodes, materials } = useGLTF("./models/Balloon.glb");
   return (
     <group {...props} dispose={null}>
       <mesh geometry={nodes.Balloon007.geometry} material={materials.phong1SG}>
@@ -18,4 +18,4 @@ export function Balloon(props) {
   );
 }
 
-useGLTF.preload("/3D-Portfolio/models/Balloon.glb");
+useGLTF.preload("./models/Balloon.glb");

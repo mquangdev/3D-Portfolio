@@ -8,7 +8,7 @@ import { useGLTF } from "@react-three/drei";
 import React from "react";
 
 export function PalmTree(props) {
-  const { nodes, materials } = useGLTF("/3D-Portfolio/models/Palm tree.glb");
+  const { nodes, materials } = useGLTF("./models/Palm tree.glb");
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -27,4 +27,4 @@ export function PalmTree(props) {
   );
 }
 
-useGLTF.preload("/3D-Portfolio/models/Palm tree.glb");
+useGLTF.preload("./models/Palm tree.glb");
