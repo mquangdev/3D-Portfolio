@@ -1,4 +1,27 @@
-# Project: 3D Portfolio
+# Getting Started
+
+First, run the development server:
+
+<pre>
+    <code>
+       npm install 
+       #or
+       yarn
+    </code>
+</pre>
+
+then
+
+<pre>
+    <code>
+       npm run dev
+       #or
+       yarn start
+    </code>
+</pre>
+
+Open http://localhost:5173 with your browser to see the result.
+You can start editing the page by modifying <code>App.tsx</code> and <code>config.js</code> file to build your own cv
 
 # Description
 
@@ -12,4 +35,3 @@
 # Demo
 
 https://github.com/mquangdev/3D-Portfolio/assets/101007740/6ca77423-82eb-4504-baa7-90d5a89bc1c1
-
