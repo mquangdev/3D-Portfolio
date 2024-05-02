@@ -10,3 +10,6 @@
 - React, TailwindCss, ThreeJS, React three fiber, Framer-motion, Jotai
 
 # Demo
+
+https://github.com/mquangdev/3D-Portfolio/assets/101007740/6ca77423-82eb-4504-baa7-90d5a89bc1c1
+
