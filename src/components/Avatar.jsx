@@ -7,11 +7,9 @@ import { useAnimations, useFBX, useGLTF, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import * as THREE from "three";
 export default function Avatar(props) {
-  const { nodes, materials } = useGLTF("./models/Me.glb");
-  const { animations: idleAnimation } = useFBX(
-    "./animations/Breathing_Idle.fbx"
-  );
-  const { animations: walkingAnimation } = useFBX("./animations/Walking.fbx");
+  const { nodes, materials } = useGLTF("models/Me.glb");
+  const { animations: idleAnimation } = useFBX("animations/Breathing_Idle.fbx");
+  const { animations: walkingAnimation } = useFBX("animations/Walking.fbx");
   const group = useRef();
   const [animation, setAnimation] = useState("idle");
   idleAnimation[0].name = "idle";
@@ -115,6 +113,6 @@ export default function Avatar(props) {
   );
 }
 
-useGLTF.preload("./models/Me.glb");
-useFBX.preload("./animations/Breathing_Idle.fbx");
-useFBX.preload("./animations/Walking.fbx");
+useGLTF.preload("models/Me.glb");
+useFBX.preload("animations/Breathing_Idle.fbx");
+useFBX.preload("animations/Walking.fbx");
