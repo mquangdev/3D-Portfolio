@@ -30,5 +30,5 @@ You can start editing the page by modifying <code>App.tsx</code> and <code>confi
 - React, TailwindCss, ThreeJS, React three fiber, Framer-motion, Jotai
 
 # Demo
-
+- demo url: https://cv-chi-vert.vercel.app/ 
 https://github.com/mquangdev/3D-Portfolio/assets/101007740/6ca77423-82eb-4504-baa7-90d5a89bc1c1
